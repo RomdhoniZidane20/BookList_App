@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "849332935088",
+    "project_id": "databasebuku-1c4c0",
+    "storage_bucket": "databasebuku-1c4c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849332935088:android:01c96ee73d410ff5b7de75",
+        "android_client_info": {
+          "package_name": "com.example.book_list"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4UCPnq8d70DffUYap7aRhk6A8gg2lJdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

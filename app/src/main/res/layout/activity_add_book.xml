@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard_activity">
+
+    <RelativeLayout
+        android:id="@+id/logo_bar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/shape_app_bar">
+
+        <ImageView
+            android:id="@+id/book_logo_2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="@android:dimen/app_icon_size"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/book_logo_2"/>
+
+        <ImageView
+            android:id="@+id/back_page_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_below="@id/book_logo_2"
+            android:text="Add Book Library"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/book_code"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo_bar"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Kode Buku"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+    <EditText
+        android:id="@+id/book_title"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/book_code"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Judul Buku"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/book_year"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/book_title"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Tahun Terbit"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/book_publisher"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/book_year"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Nama Penerbit"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/book_author"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/book_publisher"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_text"
+        android:ems="10"
+        android:hint="Nama Pengarang"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_book_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="+ Add Book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+</RelativeLayout>
