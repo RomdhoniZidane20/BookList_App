@@ -40,6 +40,7 @@ public class Register_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+//        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         firebaseAuth = FirebaseAuth.getInstance();
 
         dialogBox = new ProgressDialog(this);

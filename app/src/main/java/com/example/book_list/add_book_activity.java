@@ -35,7 +35,10 @@ public class add_book_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_book);
 
+//        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         firebaseAuth = FirebaseAuth.getInstance();
+//        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
         dialogBox = new ProgressDialog(this);
         dialogBox.setTitle("Please Wait...!");
         dialogBox.setCanceledOnTouchOutside(false);
@@ -96,7 +99,7 @@ public class add_book_activity extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void unused) {
                         dialogBox.dismiss();
-                        Toast.makeText(add_book_activity.this, "Create Account Succeed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(add_book_activity.this, "Book Added", Toast.LENGTH_SHORT).show();
 
                         Intent navigate_page = new Intent(add_book_activity.this, dashboard_activity.class);
                         startActivity(navigate_page);

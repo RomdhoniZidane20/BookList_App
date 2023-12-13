@@ -39,7 +39,9 @@ public class Login_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+//        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         firebaseAuth = FirebaseAuth.getInstance();
+
         dialogBox = new ProgressDialog(this);
         dialogBox.setTitle("Please Wait...!");
         dialogBox.setCanceledOnTouchOutside(false);
